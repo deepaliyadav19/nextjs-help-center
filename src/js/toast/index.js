@@ -1,2 +1,0 @@
-
-export { configureToast } from './toast';

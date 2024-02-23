@@ -1,0 +1,44 @@
+.header-section {
+    padding-bottom: 20px;
+    background: rgb(82, 93, 249);
+    // margin-bottom: 36px;
+    .header-child-section {
+      // height: 175px;
+      padding: 25px 0px;
+      .header-top-section {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 14px;
+        margin-bottom: 20px;
+        align-items: center;
+        .company-logo {
+          img {
+            width: 44px;
+          }
+        }
+        .text {
+          font-size: 14px;
+          font-family: "Segoe Pro Semibold";
+          color: #fff;
+        }
+      }
+      .advice{
+        color: #fff;
+      margin-bottom: 24px;
+      margin-top: 0;
+      }
+      .header-search-section {
+        font-size: 12px;
+        input{
+          height: 60px;
+          font-size: 20px;
+        }
+        :global{
+          .ant-input-search .ant-input-search-button{
+              height: 60px;
+              width: 45px;
+          }
+        }
+      }
+    }
+  }
