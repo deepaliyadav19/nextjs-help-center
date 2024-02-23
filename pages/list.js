@@ -12,9 +12,9 @@ export async function getServerSideProps() {
 
 function Page({ repo }) {
   	console.log({ repo });
-	return (
+	return ( 
 		<div>
-			<div>wer</div>
+			<Button>wer</Button>
 		</div>
 		// <Row gutter={[16, 24]}>
 		// 	{isNotEmptyArray(repo?.data) &&
