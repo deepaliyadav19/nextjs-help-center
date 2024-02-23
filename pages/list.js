@@ -2,7 +2,7 @@ import React from 'react';
 import { Col, Row } from 'antd';
 
 import style from './list.module.scss';
-import { isNotEmptyArray } from '@/src/js/utils/type-util';
+import { isNotEmptyArray } from '@/src/utils/type-util';
 
 export async function getServerSideProps() {
 	const res = await fetch('https://run.mocky.io/v3/5b7a539e-3ef1-4e90-91ef-41f107d410b0')
