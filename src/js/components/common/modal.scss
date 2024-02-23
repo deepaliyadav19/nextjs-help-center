@@ -1,0 +1,121 @@
+@import "../../../css/mixins";
+
+.portal {
+  :global {
+    .ReactModal__Overlay--after-open {
+      opacity: 1;
+    }
+
+    .ReactModal__Overlay--before-close {
+      opacity: 0;
+    }
+
+    .ReactModal__Content--after-open {
+      @include transform(translate(0, 0));
+    }
+
+    .ReactModal__Content--before-close {
+      @include transform(translate(0, -25%));
+    }
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-brand-antrika-modal-overlay-bg);
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 1050;
+}
+
+.header {
+  background: var(--color-brand-primary);
+  padding: 18px;
+
+  h3 {
+    margin: 0;
+    color: #fff;
+    line-height: 1.42;
+    font-size: 21px;
+    font-weight: 300;
+    max-width: calc(100% - 50px);
+    @include ellipsis();
+  }
+}
+
+.close {
+  color: #fff;
+  float: right;
+  padding: 0;
+  font-size: 34px;
+  font-weight: 600;
+  margin-top: -8px;
+  // opacity: 0.4;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  -webkit-appearance: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+}
+
+.body {
+  padding: 15px;
+  height: calc(100% - 66px);
+  overflow: auto;
+}
+
+.content {
+  position: static;
+  width: 85%;
+  height: calc(100% - 120px);
+  min-height: 200px;
+  margin: 60px auto;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  @include transform(translate(0, -25%));
+  transition: transform 0.2s ease-out;
+  outline: none;
+  border: none;
+  padding: 0;
+  border-radius: 4px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.download-icon-div {
+  float: right;
+  margin-right: 20px;
+  margin-top: -6px;
+  cursor: pointer;
+  // opacity: 0.5;
+  background: transparent;
+  outline: none;
+  border: none;
+
+  button {
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .content {
+    width: 75%;
+    height: calc(100% - 150px);
+    margin: 75px auto;
+  }
+}

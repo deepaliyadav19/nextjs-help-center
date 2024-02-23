@@ -1,0 +1,146 @@
+:root {
+
+    /* Main Colors */
+    
+    --color-brand-primary:              #0070d2;
+    --color-brand-primary-dark:         #005fb2;
+    --color-selection-primary-nav:      var(--color-brand-primary);
+    --color-brand-secondary:            #2C3E50;
+    --color-brand-selection:            #e7f2ff;
+    
+    /* Chat Colors */
+    
+    --color-brand-primary-chat:         #0079E2;
+    --color-brand-primary-light-chat:   #0d7fe5;
+    --color-brand-primary-light-2-chat: #1892FC;
+    --color-brand-primary-dark-chat:    #036DCE;
+    --color-brand-secondary-chat:       #FF8204;
+    
+    
+    --body-bg:                          #F4F6F9;
+    
+    --color-success:                    #2BAD91;
+    --color-danger:                     #E34F45;
+    --color-warning:                    #FED017;
+    --color-info:                       #1ABC9C;
+    
+    --color-link:                       #126efd;
+    
+    /* Status */       
+    
+    --color-status-danger:              #efd6d6;
+    --color-status-success:             #d5e9ce;
+    --color-status-pending:             #DEDEDE;
+    --color-status-default:             #F5F5F5;
+    
+    /* Header */       
+    
+    --color-header-bg:                  #082043;
+    
+    /* Navbar */       
+    
+    --navbar-height:                    60px;
+    
+    /* Footer */       
+    
+    --footer-height:                    40px;
+    
+    /* Typography */       
+    
+    --font-family-base:                 'SFS', Arial, sans-serif;
+    
+    /* Font Sizes */       
+    
+    --font-size-global:                 1rem;
+    --font-size-h1:                     1.5rem;
+    --font-size-h2:                     1.33rem;
+    --font-size-h3:                     1.167rem;
+    --font-size-h4:                     1.167rem;
+    --font-size-h5:                     1rem;
+    --font-size-h6:                     1rem;
+    --font-size-table-th:               1.1rem;
+    --font-size-nav:                    1.2rem;
+    --font-size-p:                      1rem;
+    --font-size-button:                 1.2rem;
+    --font-size-input:                  1.1rem;
+    --font-size-dropdown:               1.1rem;
+    --font-size-label:                  1.1rem;
+    
+    /* Forms */       
+    
+    --color-input-background:           #f6f6f6;
+    --color-input-border:               #ccc;
+    --color-input-text:                 #666;
+    --color-grid-head:                  rgb(7, 30, 68);
+    --color-grid-alt1:                  #fff;
+    --color-grid-alt2:                  #fff;
+    --color-grid-hover:                 #f8f8f8;
+    --color-grid-border:                #ebebeb;
+    --color-hover-shadow:               0 2px 6px rgba(0, 0, 0, 0.2);
+    --color-focus-shadow:               0 2px 6px rgba(0, 0, 0, 0.2);
+    --color-input-error:                var(--color-danger);
+    --input-radius:                     4px;
+    --input-radius-left:                4px 0 0 4px;
+    --input-radius-right:               0 4px 4px 0;
+    --input-radius-top:                 4px 4px 0 0;
+    --input-radius-bottom:              0 0 4px 4px;
+    
+    /* Pagination */       
+    
+    --color-pager-bg:                   #FBFBFB;
+    --color-pager-border:               #ebebeb;
+    --color-pager-link:                 #5a5a5a;
+    --color-pager-icon:                 #959595;
+    --color-pager-active-border:        #000;
+    --color-pager-active-link:          #000;
+    
+    /* Dashboard modal*/       
+    
+    --color-dash-primary:               #768e97;
+    --color-dash-success:               #3dda59;
+    
+    
+    /* Antrika Public */    
+    
+    --color-brand-antrika-background:      #ffffff;
+    --color-brand-antrika-roadmapFilter-main:      #ffffff;
+    --color-brand-antrika-roadmapFilter-inner:      #ffffff;
+    --color-brand-antrika-secondary:       #0d192b;
+    --color-brand-antrika-secondary-text:       #333333;
+    --color-brand-antrika-nav:       #ffffff;
+    --color-brand-antrika-navText:       #555E6A;
+    --color-brand-antrika-primary-blue:       #f1f4f9;
+    --color-brand-antrika-primary-blue-dark:       #e6ebf2;
+    --color-brand-antrika-roadmap-card: #ffffff;
+    --color-brand-antrika-roadmap-like-container: #F8F9FB;
+    --color-brand-antrika-roadmap-like-container-border: #e0e2e6;
+    --color-brand-antrika-no-post:#F6F7FA;
+    --color-brand-antrika-divider:#dadce0;
+    --color-brand-antrika-roadmap-close-btn:#000000;
+    --color-brand-antrika-feedback-left-section:#ecf0f669;
+    --color-brand-antrika-opacity-light: 1;
+    --color-brand-antrika-opacity-lighter: 1;
+    --color-brand-antrika-feedback-heart: #0000004d;
+    --color-brand-antrika-comment-input: #ffffff;
+    --color-brand-antrika-clip: #ffffff;
+    --color-brand-antrika-dropdown-arrow: #00000040;
+    --color-brand-antrika-placeholder: #00000040;
+    --color-brand-antrika-feedback-boards: #E7EBF2;
+    --color-brand-antrika-explore-modal-border: #000c1724;
+    --color-brand-antrika-modal-shadow:  0 5px 15px #00000066;
+    --color-brand-antrika-attach-file: #f2f4f79e;
+    --color-brand-antrika-crate-post-right:#f2f5f9bd;
+    --color-brand-antrika-roadmap-suggested-like: #f4f6f9a6;
+    --color-brand-antrika-roadmap-suggested-like-border: #c8ccd280;
+    --color-brand-antrika-feedback-stats-count:#e2e7ee;
+    --color-brand-antrika-login-card:#f2f5f9cc;
+    --color-brand-antrika-login-card-border:#D7DCE0;
+    --color-brand-antrika-feedback-search-result-bg: '#ebf4fb';
+    --color-brand-antrika-feedback-search-result: '#333333';
+    --color-brand-nav-select: '#1677ff';
+    --color-brand-nav-select-bg: '#e7f2ff';
+    --color-brand-antrika-emoji-border: '#0070d257';
+    --color-brand-antrika-emoji-bg: '#0070d114';
+    
+    
+    }

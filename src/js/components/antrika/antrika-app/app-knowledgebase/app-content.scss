@@ -1,0 +1,52 @@
+@import "../../../../../css/mixins";
+@import "../../../../../css/bootstrap/mixins";
+
+.content {
+  position: relative;
+  padding: 0px 20px;
+  height: calc(100% - (var(--footer-height) + var(--navbar-height)));
+  z-index: 1008;
+  overflow: auto;
+  box-shadow: inset 0px 0px 10px 3px rgba(0, 0, 0, 0.1);
+}
+
+.content-with-header-notification {
+  position: relative;
+  padding: 0px 20px;
+  height: calc(100% - (var(--footer-height) + var(--navbar-height)) - 40px);
+  z-index: 1008;
+  overflow: auto;
+  box-shadow: inset 0px 0px 10px 3px rgba(0, 0, 0, 0.1);
+}
+
+.side-top-bar {
+  position: relative;
+  // padding: 0px 20px 0;
+  height: 100%;
+  // height: calc(100% - (var(--footer-height) + var(--navbar-height)));
+  z-index: 1008;
+  // overflow: auto;
+  // box-shadow: inset 0px 0px 10px 3px rgba(0, 0, 0, 0.1);
+}
+
+.billing-side-menu {
+  position: relative;
+  height: calc(100% - 53px);
+  z-index: 1008;
+}
+
+.content1 {
+  position: relative;
+  padding: 0px 0px;
+  height: calc(100% - var(--footer-height)) ;
+  z-index: 1008;
+  overflow: auto;
+  box-shadow: inset 0px 0px 10px 3px rgba(0, 0, 0, 0.1);
+} 
+
+@media screen and (max-width:768px){
+  .content1{
+    overflow-x: hidden;
+    height: 100% ;
+  }
+}
